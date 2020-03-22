@@ -4,7 +4,7 @@ Laboratorijske vježbe i dr. iz FERovih Naprednih operacijskih sustava, a.g. 201
 
 ## Licenca
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
 ## Sadržaj
 
