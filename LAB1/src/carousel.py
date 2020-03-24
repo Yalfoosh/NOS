@@ -53,7 +53,7 @@ class Visitor:
             while True:
                 message = in_q.get()
 
-                if message != "Sjedni":
+                if message != "Sjedi":
                     in_q.put(message)
                 else:
                     break
@@ -74,7 +74,7 @@ class Visitor:
 
             print(f"Sišao posjetitelj {self.name}\n", end="")
 
-        print(f"\nPosjetitelj {self.name} završio.\n\n", end="")
+        print(f"\nPosjetitelj {self.name} završio.\n", end="")
 
 
 class Carousel:
@@ -110,22 +110,29 @@ class Carousel:
 
         while non_zero_count >= self.max_visitors:
             while self.in_q.get() != "Želim se voziti" and non_zero_count != 0:
-                pass
+                sleep(0.05)
 
             for _ in range(self.max_visitors):
-                self.out_q.put("Sjedni")
+                self.out_q.put("Sjedi")
 
+            # Not necessary, but makes sure you wait for everyone to get on the carousel.
             while self.out_q.qsize() != 0:
                 sleep(0.05)
 
-            print("\nPokrenuo vrtuljak\n", end="")
+            print("\nPokrenuo vrtuljak\n\n", end="")
             sleep(np.random.uniform(1., 3.))
             print("\nVrtuljak zaustavljen\n\n", end="")
+
+            # Add this to make input more deterministic
+            sleep(0.25)
 
             for _ in range(self.max_visitors):
                 self.out_q.put("Ustani")
 
+            # Not necessary, but makes sure you wait for everyone to come down from the carousel.
             while self.out_q.qsize() != 0:
                 sleep(0.05)
 
             non_zero_count = np.count_nonzero(np.array([x.process.exitcode is None for x in self._workers]))
+
+        print("\nVrtuljak završio s radom\n", end="")
