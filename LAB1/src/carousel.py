@@ -115,11 +115,17 @@ class Carousel:
             for _ in range(self.max_visitors):
                 self.out_q.put("Sjedni")
 
+            while self.out_q.qsize() != 0:
+                sleep(0.05)
+
             print("\nPokrenuo vrtuljak\n", end="")
             sleep(np.random.uniform(1., 3.))
             print("\nVrtuljak zaustavljen\n\n", end="")
 
             for _ in range(self.max_visitors):
                 self.out_q.put("Ustani")
+
+            while self.out_q.qsize() != 0:
+                sleep(0.05)
 
             non_zero_count = np.count_nonzero(np.array([x.process.exitcode is None for x in self._workers]))
