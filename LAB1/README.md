@@ -1,14 +1,15 @@
 # Napredni operacijski sustavi
-*1. laboratorijska vježba*
+
+1. laboratorijska vježba - Komunikacija i sinkronizacija procesa
 
 
 ## Prije pokretanja
 
 Trebaju vam:
 
-Python 3.6
-Numpy
-Jupyter
+- Python 3.6
+- Numpy
+- Jupyter
 
 
 ## Pokretanje
@@ -18,4 +19,4 @@ U korijenu direktorija laboratorijske vježbe otvorite terminal i upišite `jupy
 
 ## Poveznice
 
-[GitHub](https://github.com/Yalfoosh/NOS/tree/master/LAB1)
+- [GitHub](https://github.com/Yalfoosh/NOS/tree/master/LAB1)
