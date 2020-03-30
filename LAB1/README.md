@@ -1,6 +1,6 @@
 # Napredni operacijski sustavi
 
-1. laboratorijska vježba - Komunikacija i sinkronizacija procesa
+1. laboratorijska vježba - **Komunikacija i sinkronizacija procesa**
 
 
 ## Prije pokretanja
@@ -14,7 +14,9 @@ Trebaju vam:
 
 ## Pokretanje
 
-U korijenu direktorija laboratorijske vježbe otvorite terminal i upišite `jupyter notebook`. Otvorit će vam se internet preglednik i prikazati preglednik direktorija, u kojem otvorite LAB1.ipynb. Vježba je već pokrenuta i možete pregledavati rezultate. Ukoliko vas interesira rad, vježbu možete pokrenuti tako da ponovno pokrenete kernel i izvršite sve blokove (`Restart & Re-Run All`)
+U korijenu direktorija laboratorijske vježbe otvorite terminal i upišite `jupyter notebook`. Otvorit će vam se internet preglednik i prikazati preglednik direktorija, u kojem otvorite **LAB1.ipynb**. Vježba je već pokrenuta i možete pregledavati rezultate.
+
+Ako vas interesira rad vježbe, vježbu možete pokrenuti tako da ponovno pokrenete jezgru i izvršite sve blokove (`Restart & Re-Run All`).
 
 
 ## Poveznice
