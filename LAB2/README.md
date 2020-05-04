@@ -9,6 +9,7 @@ Trebaju vam:
 
 - Python 3.6
 - PyCryptodome 3.9.7
+- Jupyter
 
 
 ### Pokretanje
